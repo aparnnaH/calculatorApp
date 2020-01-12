@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6he-Ir-eoM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.99992352724075317" green="1" blue="0.99988287687301636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xU-Co-rYm" userLabel="Ac Btn">
+                                <rect key="frame" x="31" y="240" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="AC"/>
+                                <connections>
+                                    <action selector="clearBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jeo-IZ-SN9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebb-Kb-nbI" userLabel="Sign Btn">
+                                <rect key="frame" x="111" y="240" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="+/-"/>
+                                <connections>
+                                    <action selector="SignBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tmV-HF-DMP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey6-ZQ-bGG" userLabel="Percent Btn">
+                                <rect key="frame" x="191" y="240" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="%"/>
+                                <connections>
+                                    <action selector="PercentBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="suN-mm-gVL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZC-H0-xrx" userLabel="Div Btn">
+                                <rect key="frame" x="271" y="240" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" backgroundImage="divide.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="DivideBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LrZ-Ka-Ydr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIA-1b-WnD" userLabel="7  Btn">
+                                <rect key="frame" x="31" y="315" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="7.circle.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SevenBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yj6-PR-Hx4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me7-Ve-SFj" userLabel="8 Btn">
+                                <rect key="frame" x="111" y="315" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="8.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="EightBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLz-mF-lFt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3i-FO-SMG" userLabel="9 Btn">
+                                <rect key="frame" x="191" y="315" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="9.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="NineBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yh1-Df-b65"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocb-1k-ADJ" userLabel="Multiply Btn">
+                                <rect key="frame" x="271" y="315" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="multiply.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="MultipleBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72J-Hc-qT8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6b-20-2XL" userLabel="4 Btn">
+                                <rect key="frame" x="31" y="390" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="4.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="FourBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRx-bh-dWt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTU-rX-SE1" userLabel="5 Btn">
+                                <rect key="frame" x="111" y="390" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="5.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="FiveBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3aB-WN-CkW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo8-Go-xPa" userLabel="6 Btn">
+                                <rect key="frame" x="191" y="390" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="6.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="SixBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5g-qu-YFr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9l-TI-DOA" userLabel="Sub Btn">
+                                <rect key="frame" x="271" y="390" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="minus.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="SubtractBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gfn-5p-QsO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsD-hC-R9P" userLabel="3 Btn">
+                                <rect key="frame" x="191" y="471" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="3.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="ThreeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VlQ-yA-xbU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQx-eA-GjN" userLabel="Plus Btn">
+                                <rect key="frame" x="271" y="471" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="plus.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="AddBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6qg-Sp-Ryh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KS-Ff-W7m" userLabel="0 Btn">
+                                <rect key="frame" x="31" y="546" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="0.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="ZeroBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHs-8r-hPJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqn-gz-3vp" userLabel="Decimal Btn">
+                                <rect key="frame" x="191" y="546" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" ."/>
+                                <connections>
+                                    <action selector="DecimalBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EwB-RT-jCU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHS-vj-mlu" userLabel="Equal Btn">
+                                <rect key="frame" x="271" y="546" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="equal.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="EqualBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEa-3L-uB4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnS-rM-ZFK" userLabel="2 Btn">
+                                <rect key="frame" x="111" y="471" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="2.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="TwoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AoA-iW-yss"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vw-yR-r0B" userLabel="1 Btn">
+                                <rect key="frame" x="31" y="471" width="72" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title=" " backgroundImage="1.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="OneBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PnF-M9-EtE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulu-ey-snO" userLabel="Result Label">
+                                <rect key="frame" x="34" y="99" width="306" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6he-Ir-eoM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5sK-a0-EFF"/>
+                            <constraint firstAttribute="trailing" secondItem="6he-Ir-eoM" secondAttribute="trailing" id="N6X-Of-x04"/>
+                            <constraint firstAttribute="bottom" secondItem="6he-Ir-eoM" secondAttribute="bottom" id="s8d-TP-rob"/>
+                            <constraint firstItem="6he-Ir-eoM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="v1u-dc-WAV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="ulu-ey-snO" id="tsm-T1-Hfr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="1.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="2.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="3.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="4.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="5.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="6.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="7.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="8.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="9.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="divide.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="equal.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="minus.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="multiply.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="plus.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
